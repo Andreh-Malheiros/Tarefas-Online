@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+  </style>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Tarefas</h1>
+      </header>
+      <nav>
+        <input type="text" id="input-add-task" placeholder="" />
+        <label for="input-add-task" id="label-input">Adicione sua task</label>
+        <button type="submit" onclick="salvartask()" id="btn-enviar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="20"
+            width="30"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="#ffffff"
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+            />
+          </svg>
+        </button>
+      </nav>
+      <section>
+        <div id="container-task">
+          <div id="concluida">Concluida</div>
+          <div id="pendente">Pendentes</div>
+          <div id="todas">Todas</div>
+
+          <ul id="list-concluida"></ul>
+          <ul id="list-pendente"></ul>
+          <ul id="list-all"></ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
